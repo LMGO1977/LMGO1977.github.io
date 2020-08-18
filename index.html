@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Developin Data Products: R Markdow &amp; Ploty Assignment - Number of incidents</title>
+  <title>Developin Data Products: R Markdow &amp; Ploty Assignment - Number of incidents (please use de cursor to see the chart)</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -19,7 +19,7 @@
     var SLIDE_CONFIG = {
       // Slide settings
       settings: {
-                title: 'Developin Data Products: R Markdow &amp; Ploty Assignment - Number of incidents',
+                title: 'Developin Data Products: R Markdow &amp; Ploty Assignment - Number of incidents (please use de cursor to see the chart)',
                         useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -5005,6 +5005,16 @@ slide:not(.current) .plotly.html-widget{
           </hgroup>
   </slide>
 
+<slide class=""><hgroup><h2>Chart - Number of Incidents</h2></hgroup><article  id="chart---number-of-incidents">
+
+<pre class = 'prettyprint lang-r'>x &lt;- c(1:20)
+y &lt;- c(200, 345, 764, 832, 1000, 1031, 1020, 850, 1500, 1120, 534, 3201, 912, 300, 1501, 1453, 2200, 2311, 341, 1011)
+data &lt;- data.frame(x, y)
+fig &lt;- plot_ly(data, x = ~x, y = ~y, name = &quot;Evolution number of incidents&quot;, type = &#39;scatter&#39;, mode = &#39;lines&#39;) 
+fig</pre>
+
+<div id="htmlwidget-7ee16561938896403bc9" style="width:720px;height:432px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7ee16561938896403bc9">{"x":{"visdat":{"24944f2964":["function () ","plotlyVisDat"]},"cur_data":"24944f2964","attrs":{"24944f2964":{"x":{},"y":{},"mode":"lines","name":"Evolution number of incidents","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"x"},"yaxis":{"domain":[0,1],"automargin":true,"title":"y"},"hovermode":"closest","showlegend":false},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],"y":[200,345,764,832,1000,1031,1020,850,1500,1120,534,3201,912,300,1501,1453,2200,2311,341,1011],"mode":"lines","name":"Evolution number of incidents","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script></article></slide>
 
 
   <slide class="backdrop"></slide>
